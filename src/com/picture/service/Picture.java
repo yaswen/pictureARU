@@ -66,12 +66,8 @@ public class Picture {
 	        //Graphics graphicsQR = img.getGraphics();
 	        g.drawImage(img, 0, 0, w, h, null);
 	        
-	        
 			Graphics2D textIntro = img2.createGraphics();
-	        //颜色
-	        textIntro.setColor(new Color(51, 51, 51));
-	        //设置字体
-	        
+	        textIntro.setColor(new Color(51, 51, 51));//颜色
 	        
 			g.setBackground(Color.RED);// 设置背景颜色
 			g.setColor(new Color(51, 51, 51));// 设置字体颜色
@@ -121,7 +117,6 @@ public class Picture {
 	 */
 	public static void main(String[] args) {
 		Picture tt = new Picture();
-//		BufferedImage d = tt.loadImageLocal("E:/yswenp/表情包/aru/批量修改大小/QQ影像批量编辑结果/7040.png");
 		BufferedImage d = tt.loadImageLocal("WebContent/files/aru/0141.png");
 		tt.writeImageLocal("WebContent/files/new/1.png",tt.modifyImage(d, "笑不露齿"));
 		System.out.println("success");
