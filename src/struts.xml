@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- namespace:定义package命名空间 该命名空间影响到url的地址，例如此命名空间为/test那么访问是的地址为http://localhost:8080/struts2/test/XX.action -->
+	 <package name="default" extends="struts-default" namespace="/">
+        <action name="PictureAction" class="com.picture.action.PictureAction">
+            <!-- <result name="success" >/1.jsp</result> -->
+            <result name="success" >
+                2.jsp
+            </result>
+        </action>
+    </package>
+</struts>
